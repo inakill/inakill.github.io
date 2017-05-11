@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="shortcut icon" href="http://icons.iconarchive.com/icons/limav/game-of-thrones/48/Targaryen-icon.png">
+		<meta charset="ISO-8859-1">
+		<title>Khaleesizador</title>
+			
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+			
+		<script type="text/javascript">
+			function validateForm() {
+				var str = document.forms["khaleesizador"]["inputa"].value;
+				if (str == "") {
+					alert("Pero escribe algo primero, retarded!");
+					
+				} else {
+					var output = str.replace(/[aeiou]/gi, 'i');
+
+					document.getElementById("result").innerHTML  = "<p>" + output + "</p>";
+					document.getElementById("emilia").src="http://mqltv.com/wp-content/uploads/2015/08/LjEuB5q.jpg";
+				}
+			}
+		</script>
+		
+		<style>
+		main {
+			margin-left: 25%;
+			width: 50%;
+		}
+		
+		main .title {
+			background-color: red;
+		}
+		
+		main h1 {
+			text-align: center;
+			font-size: 60px;
+			font-family: 'Oswald', sans-serif;
+		}
+		
+		main img {
+			margin-left: 17.5%;
+			max-width: 65%;
+			margin-bottom: 10px;
+			
+		}
+		
+		main #result {
+			position: relative;
+		}
+		
+		main p {
+			font-size: 28px;
+			text-align: center;
+			font-family: 'Oswald', sans-serif;
+		}
+		
+		main input {
+			margin-left: 25%;
+			line-height: 40px;
+			width: 50%;
+		}
+		
+		textarea {
+			width: 100%;
+			height: 25%;
+			resize: none;
+		}
+		
+		</style>
+	</head>
+	
+	<body>
+		<main>
+		<div class="row">
+				<h1>KHALEESIZADOR</h1>
+		</div>	
+		
+		<div class="row">
+			<img id="emilia" src="http://ell.h-cdn.co/assets/16/20/980x490/landscape-1463606615-maxresdefault.jpg">
+			</img>
+		</div>	
+		
+		<div class="row">	
+			<div class="col-xs-2 col-md-2"></div>
+				<div class="col-xs-8 col-md-8">
+					<div id="formulario">
+						<form name="khaleesizador">
+							<textarea type="text" name = "inputa" size="300" placeholder="Introduce texto.." onkeydown="if (event.keyCode == 13) { validateForm(); return false; }"></textarea>
+							<input type="button" onclick="validateForm()" value="Khaleesizalo!">
+						</form>	
+					</div>
+				
+					<div class="col-xs-12 col-md-12" id="result"><p></p></div>
+					
+				</div>
+			<div class="col-xs-2 col-md-2"></div>
+		</div>
+		</main>	
+	</body>
+</html>
+			
