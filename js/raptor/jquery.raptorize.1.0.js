@@ -30,8 +30,8 @@
 			//}
 			
 			//Raptor Vars
-			var raptorImageMarkup = '<img id="elRaptor" style="display: none" src="raptor.png" />'
-			var raptorAudioMarkup = '<audio id="elRaptorShriek" preload="auto"><source src="raptor-sound.mp3" /><source src="raptor-sound.ogg" /></audio>';	
+			var raptorImageMarkup = '<img id="elRaptor" style="display: none" src="js/raptor/raptor.png" />'
+			var raptorAudioMarkup = '<audio id="elRaptorShriek" preload="auto"><source src="js/raptor/raptor-sound.mp3" /><source src="raptor-sound.ogg" /></audio>';	
 			var locked = false;
 			
 			//Append Raptor and Style
@@ -89,8 +89,7 @@
 					}
 				})
 			} else if(options.enterOn == 'konami-code'){
-			    // var kkeys = [], konami = "38,38,40,40,37,39,37,39,66,65";
-				var kkeys = [], konami = "38,38";
+			    var kkeys = [], konami = "38,38,40,40,37,39,37,39,66,65";
 			    $(window).bind("keydown.raptorz", function(e){
 			        kkeys.push( e.keyCode );
 			        if ( kkeys.toString().indexOf( konami ) >= 0 ) {
@@ -99,7 +98,7 @@
 			        }
 			    }, true);
 	
-			} 
+			}
 			
         });//each call
     }//orbit plugin call
