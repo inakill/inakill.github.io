@@ -11,6 +11,20 @@
 		<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
 			
 		<script src="js/khaleesizador.js"></script>
+		<!-- <script src="js/cheet/cheet.min.js"></script> -->
+		<!-- <script src="js/din.js"></script> -->
+
+		<!-- For the Konami Code version -->
+		<script type="text/javascript">
+			$(window).load(function() {
+				$('.raptor').raptorize({
+					'enterOn' : 'konami-code'
+				});
+			});
+		</script>
+		
+		<script src="js/raptor/jquery.raptorize.1.0.js"></script>
+		
 		<link rel="stylesheet" type="text/css" href="./css/khaleesizador.css">
 		<link rel="stylesheet" type="text/css" href="./css/structure.css">
 
@@ -41,7 +55,7 @@
 		  </div><!-- /.container-fluid -->
 		</nav>
 
-		<main id="contenedor">
+		<main class="raptor" id="contenedor">
 		<div class="row">
 				<h1>KHALEESIZADOR</h1>
 		</div>	
