@@ -1,0 +1,59 @@
+
+
+body{
+
+}
+
+
+main {
+	width: 98%;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+h2 {
+	font-family: 'Oswald', sans-serif;
+	color: black;
+	text-align: center;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+h3 {
+	font-family: 'Oswald', sans-serif;
+	color: black;
+	text-align: left;
+	text-indent: 20px;
+	font-size: 15px;
+	font-weight: lighter;
+}
+
+p {
+	font-family: 'Oswald', sans-serif;
+	color: black;
+	font-size: 20px;
+}
+
+img {
+	max-width: 100%;
+	padding-bottom: 0;
+}
+
+main .noticion {
+	padding-bottom: 2%;
+}
+
+main .noticia {
+	padding-bottom: 2%;
+	position: relative;
+}
+
+main .noticia .imagen{
+	float:right;
+	width:60%;
+}
+
+main .notici {
+	margin-bottom: 20px;
+
+}

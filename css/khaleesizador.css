@@ -1,0 +1,40 @@
+
+		main {
+			margin-left: 25%;
+			width: 50%;
+		}
+				
+		main h1 {
+			text-align: center;
+			font-size: 60px;
+			font-family: 'Oswald', sans-serif;
+		}
+		
+		main img {
+			margin-left: 17.5%;
+			max-width: 65%;
+			margin-bottom: 10px;
+			
+		}
+		
+		main #result {
+			position: relative;
+		}
+		
+		main p {
+			font-size: 28px;
+			text-align: center;
+			font-family: 'Oswald', sans-serif;
+		}
+		
+		main input {
+			margin-left: 25%;
+			line-height: 40px;
+			width: 50%;
+		}
+		
+		textarea {
+			width: 100%;
+			height: 25%;
+			resize: none;
+		}
