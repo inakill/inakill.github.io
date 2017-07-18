@@ -23,6 +23,26 @@
 			position:relative;
 		}
 
+		.gif img{
+			max-width: 100%;
+		}
+
+		.gif h2 {
+			font-family: 'Oswald', sans-serif;
+			color: black;
+			text-align: center;
+			font-size: 30px;
+			font-weight: bold;
+		}
+
+		.gif p {
+			font-family: 'Oswald', sans-serif;
+			color: black;
+			font-size: 20px;
+		}
+
+
+
 		.caption h2 {
 			font-family: 'Oswald', sans-serif;
 			color: black;
