@@ -34,26 +34,35 @@ p {
 	font-size: 20px;
 }
 
+.imagen h3 {
+	position: fixed;
+	z-index: 10;
+}
+
 img {
 	max-width: 100%;
 	padding-bottom: 0;
 }
 
-main .noticion {
+.noticion {
 	padding-bottom: 2%;
 }
 
-main .noticia {
+.noticion img{
+	display: block;
+    margin: auto;
+    max-width: 800px;
+}
+
+.noticia {
 	padding-bottom: 2%;
-	position: relative;
 }
 
-main .noticia .imagen{
-	float:right;
-	width:60%;
+.noticia img{
+	display: block;
+    margin: auto;
+    max-height: 300px;
 }
 
-main .notici {
-	margin-bottom: 20px;
 
-}
+

@@ -4,7 +4,10 @@ function validateForm() {
 					alert("Pero escribe algo primero, retarded!");
 					
 				} else {
-					var output = str.replace(/[aeiou]/gi, 'i');
+
+
+
+					var output = str.replace(/[aeiouAEIOUáéíóúñäëïöüÁÉÍÓÚÄËÏÖÜ]/gi, 'i');
 
 					document.getElementById("result").innerHTML  = "<p>" + output + "</p>";
 					document.getElementById("emilia").src="img/mimimi.jpg";
