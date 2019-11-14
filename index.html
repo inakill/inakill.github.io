@@ -1,115 +1,54 @@
 <!DOCTYPE html>
 <html>
 	<head>
-
+		<link rel="shortcut icon" href="img/icons/Targaryen-icon.png">
 		<meta charset="ISO-8859-1">
-		<title>Manporrer Today</title>
+		<title>Khaleesizador</title>
 			
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 		<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+			
+		<script src="js/khaleesizador.js"></script>
+		<script src="js/cheet/cheet.min.js"></script>
+		<script src="js/din.js"></script>
 		
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-		<script>!window.jQuery && document.write('<script src="jquery-1.4.1.min.js"><\/script>')</script>
 		<script src="js/raptor/jquery.raptorize.1.0.js"></script>
 		
-		<link rel="stylesheet" type="text/css" href="./css/manporrer.css">
+		<link rel="stylesheet" type="text/css" href="./css/khaleesizador.css">
 		<link rel="stylesheet" type="text/css" href="./css/structure.css">
-
-		<script type="text/javascript">
-			$(window).load(function() {
-				$('.raptor').raptorize({
-					'enterOn' : 'konami-code'
-				});
-			});
-		</script>
 
 	</head>
 	
 	<body>
 
-		<!-----------
-		  NAV BAR
-		  -------------->
-		<nav class="navbar navbar-inverse navbar-fixed-top">
-		  <div class="container-fluid">
-		    <div class="navbar-header">
-		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-		        <span class="sr-only">Toggle navigation</span>
-		        <span class="icon-bar"></span>
-		        <span class="icon-bar"></span>
-		        <span class="icon-bar"></span>
-		      </button>
-		       <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-home"></span></a>
-		    </div>
-
-		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-		      <ul class="nav navbar-nav">
-		        <li><a href="khaleesizador.html">Khaleesizador</a></li>
-		        <li><a href="gifs.html">Gifs</a></li>
-		      </ul>
-		    </div><!-- /.navbar-collapse -->
-		  </div><!-- /.container-fluid -->
-		</nav>
-
-		<div class="container">
-
-			<div class="row title">
-					<img src="img/LOGOJ.jpg"/>
-			</div>	
-
-			<div class="row">
-				<main class="col-xs-8 col-md-8">
-				
-					<div class="row">	
-						
-						<div class="row noticion">
-							<div class="col-xs-12 col-md-12 imagen">
-								<img src="img/manporrer/ibervending.jpg"/>
-								<h3></h3>
-							</div>
-							<h2>Manporrer denuncia a Ibervending</h2>
-							<p>Tras doce a&ntilde;os de funcionamiento, las m&aacute;quinas de caf&eacute; han recibido la llamada de Skynet y han procedido a ejecutar la conocida como Orden 66, y han comenzado a atacar a los desarrolladores. El departamento de marketing ha confirmado que se han encontrado trazas de anthrax (lo del sobre, no el grupo) en un capuccino de la planta cuarta planta. Un se&ntilde;or de SAP ha perdido un dedo al intentar extraer un vaso de pl&aacute;stico cuando se encontraba de turpin un jueves.</p>
-						</div>
-					</div><!-- row -->
-
-					<div class="row noticia">
-						<div class="col-xs-4 col-md-4">
-							<div class="imagen">
-								<img src="img/manporrer/murcia.jpg"/>
-								<h3>Bandera no oficial en un toldo del festival</h3>
-							</div>
-							<h2>Experis arrasa en el Vi&ntilde;a</h2>
-							<p>La delegaci&oacute;n ciberiana cierra el festival de este a&ntilde;o con la siguiente declaraci&oacute;n: "Un jam&oacute;n no est&aacute; loco, pero est&aacute; colgado."</p>
-						</div>
-
-						<div class="col-xs-4 col-md-4">
-							<div class="imagen">
-								<img src="img/manporrer/oracle.jpg"/>
-								<h3>Dont read this!!</h3>
-							</div>
-							<h2>Pipolsof conquista Marte</h2>
-							<p>Agradecimiento colectivo al departamento de Arquitectura.</p>
-						</div>
-
-						<div class="col-xs-4 col-md-4">
-							<div class="imagen">
-								<img src="img/manporrer/pr.jpg"/>
-								<h3>Dont read this!</h3>
-							</div>
-							<h2>"Soy programador" 15 a&ntilde;os despu&eacute;s</h2>
-							<p>As&iacute; evoluciona tu carrera si no tienes un m&aacute;ster de la URJC.</p>
-						</div>
-					</div><!-- row -->
-
-				</main>	
-
-				<aside class="col-xs-4 col-md-4">
-					<img src="img/manporrer/isban.png"/>
-				</aside>
-			</div> <!-- row-->
+		<main class="raptor" id="contenedor">
+		<div class="row">
+				<h1>KHALEESIZADOR</h1>
 		</div>	
+		
+		<div class="row">
+			<img id="emilia" src="img/emilia.jpg">
+			</img>
+		</div>	
+		
+		<div class="row">	
+			<div class="col-xs-2 col-md-2"></div>
+				<div class="col-xs-8 col-md-8">
+					<div id="formulario">
+						<form name="khaleesizador">
+							<textarea type="text" name = "inputa" size="300" placeholder="Introduce texto.." onkeydown="if (event.keyCode == 13) { validateForm(); return false; }"></textarea>
+							<input type="button" onclick="validateForm()" value="Khaleesizalo!">
+						</form>	
+					</div>
+				
+					<div class="col-xs-12 col-md-12" id="result"><p></p></div>
+					
+				</div>
+			<div class="col-xs-2 col-md-2"></div>
+		</div>
+		</main>	
 	</body>
 </html>
 			
